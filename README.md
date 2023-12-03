@@ -15,7 +15,7 @@ This Node.js application provides a Product Inventory Management API with basic 
 ### 1. Clone the Repository
 
 ```sh
-$ git clone <repository-url>
+$ git clone https://github.com/tahmid09/Nodejs-Terraform-Scripts.git
 $ cd product-inventory-api
 ```
 ### 2. Install Dependencies
