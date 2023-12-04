@@ -33,18 +33,6 @@ router.post('/', authenticateToken, async (req, res) => {
 
 // Other CRUD routes go here...
 
-// Authentication endpoint
-router.post('/login', (req, res) => {
-  const { username, password } = req.body;
 
-  // Validate username and password (this is a basic example, in a real-world scenario, you'd use a proper authentication mechanism)
-  if (username === 'user' && password === 'password') {
-    const user = { username };
-    const accessToken = jwt.sign(user, jwtSecret);
-    res.json({ accessToken });
-  } else {
-    res.status(401).json({ message: 'Invalid credentials' });
-  }
-});
 
 module.exports = router;
