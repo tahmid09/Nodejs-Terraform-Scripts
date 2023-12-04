@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const { db } = require('./config/db');
 const productRouter = require('./routes/product');
+const userRouter = require('./routes/user');
 
 const app = express();
 const PORT = 3000;
@@ -11,6 +12,10 @@ app.use(bodyParser.json());
 
 // Routes
 app.use('/products', productRouter);
+
+
+
+app.use('/users', userRouter);
 
 // Start the server
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));

@@ -49,7 +49,12 @@ Follow the prompts to apply the Terraform configuration.
 
 ## Authentication
 
-* Endpoint: /products/login
+* Endpoint: /users/login
+* Method: POST
+* Payload: { "username": "your-username", "password": "your-password" }
+* Response: { "accessToken": "your-generated-jwt-token" }
+
+* Endpoint: /users/register
 * Method: POST
 * Payload: { "username": "your-username", "password": "your-password" }
 * Response: { "accessToken": "your-generated-jwt-token" }
